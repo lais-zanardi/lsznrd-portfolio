@@ -6,20 +6,22 @@ export function Skills() {
   const hardGroups = [
     { labelKey: "skills.group.languages", items: [
       { name: "JavaScript", level: 90 },
+      { name: "React", level: 90 },
       { name: "HTML5 / CSS3", level: 95 },
       { name: "EJS", level: 85 },
     ]},
     { labelKey: "skills.group.frameworks", items: [
       { name: "Node.js", level: 88 },
-      { name: "Sequelize ORM", level: 85 },
+      { name: "Java + Spring Boot", level: 85 },
       { name: "Express", level: 82 },
     ]},
     { labelKey: "skills.group.databases", items: [
       { name: "MySQL / PostgreSQL", level: 80 },
+      { name: "MongoDB", level: 75 },
     ]},
     { labelKey: "skills.group.tools", items: [
       { name: "GitHub", level: 92 },
-      { name: "Atlassian Jira", level: 85 },
+      { name: "Jira", level: 85 },
       { name: "Google AI Pro", level: 88 },
     ]},
   ];
