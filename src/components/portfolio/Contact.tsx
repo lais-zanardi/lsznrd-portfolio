@@ -34,25 +34,25 @@ export function Contact() {
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="mailto:lais.zanardi@exemplo.com"
+            href="mailto:zanardilais@gmail.com"
             className="group inline-flex items-center gap-2 bg-brand-pink px-8 py-4 font-mono text-xs font-bold uppercase tracking-[0.2em] text-black shadow-[5px_5px_0px_0px_var(--brand-red)] transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0px_0px_var(--brand-red)]"
           >
             {t("contact.cta")}
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
-            href="mailto:lais.zanardi@exemplo.com"
+            href="mailto:zanardilais@gmail.com"
             className="font-display text-lg italic text-neutral-300 underline decoration-white/20 underline-offset-8 transition-colors hover:text-brand-pink"
           >
-            lais.zanardi@exemplo.com
+            lais.inocencio@aluno.cps.sp.gov.br
           </a>
         </div>
 
         <div className="mt-16 flex justify-center gap-3">
           {[
-            { Icon: Linkedin, href: "https://linkedin.com/in/laiszanardi", label: "LinkedIn" },
-            { Icon: Github, href: "https://github.com/laiszanardi", label: "GitHub" },
-            { Icon: Mail, href: "mailto:lais.zanardi@exemplo.com", label: "Email" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/lais-zanardi-inocencio/", label: "LinkedIn" },
+            { Icon: Github, href: "https://github.com/lais-zanardi", label: "GitHub" },
+            { Icon: Mail, href: "mailto:zanardilais@gmail.com", label: "Email" },
           ].map(({ Icon, href, label }) => (
             <a
               key={label}
