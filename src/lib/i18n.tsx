@@ -78,12 +78,12 @@ const dictionaries: Record<Lang, Dict> = {
     "projects.p1.solution": "Criação de uma plataforma completa com painel de controle (dashboard) e formulários para edição e inclusão de novos projetos.",
     "projects.p1.challenges": "Estruturação das entidades de dados (Projetos e Disciplinas) e integração de rotas REST.",
     "projects.p1.results": "Sistema funcional e escalável para gerenciamento de projetos acadêmicos.",
-    "projects.p2.context": "",
-    "projects.p2.desc": "",
-    "projects.p2.problem": "",
-    "projects.p2.solution": "",
-    "projects.p2.challenges": "",
-    "projects.p2.results": "",
+    "projects.p2.context": "Papel: Arquitetura & Full-stack",
+    "projects.p2.desc": "Atuei como Desenvolvedora conduzindo a migração de um modelo monolítico para microsserviços. Estruturei a base e dei suporte ativo ao desenvolvimento do front-end",
+    "projects.p2.problem": "Necessidade de centralizar o registro de horas e gerenciar a produtividade da equipe de forma escalável",
+    "projects.p2.solution": "Desenho da arquitetura em microsserviços usando Docker, RabbitMQ e Keycloak, com back-end em Java/Spring Boot e front-end em React com a biblioteca Daisy UI",
+    "projects.p2.challenges": "Orquestrar a comunicação assíncrona entre os serviços e garantir que a aplicação suportasse pelo menos 1000 acessos simultâneos",
+    "projects.p2.results": "Plataforma robusta entregue no prazo",
     "projects.p3.context": "",
     "projects.p3.desc": "",
     "projects.p3.problem": "",
@@ -239,12 +239,12 @@ const dictionaries: Record<Lang, Dict> = {
     "projects.p1.solution": "Creation of a complete platform with a dashboard and forms for editing and including new projects.",
     "projects.p1.challenges": "Structuring data entities (Projects and Courses) and integrating REST routes.",
     "projects.p1.results": "Functional and scalable system for managing academic projects.",
-    "projects.p2.context": "",
-    "projects.p2.desc": "",
-    "projects.p2.problem": "",
-    "projects.p2.solution": "",
-    "projects.p2.challenges": "",
-    "projects.p2.results": "",
+    "projects.p2.context": "Role: Architecture & Full-stack",
+    "projects.p2.desc": "I worked as a Developer leading the migration from a monolithic model to microservices. I structured the foundation and actively supported the front-end development",
+    "projects.p2.problem": "Need to centralize time tracking and manage team productivity in a scalable way",
+    "projects.p2.solution": "Architecture design in microservices using Docker, RabbitMQ, and Keycloak, with a Java/Spring Boot back-end and a React front-end with the Daisy UI library",
+    "projects.p2.challenges": "Orchestrating asynchronous communication between services and ensuring the application supported at least 1000 simultaneous accesses",
+    "projects.p2.results": "Robust platform delivered on time",
     "projects.p3.context": "",
     "projects.p3.desc": "",
     "projects.p3.problem": "",
@@ -357,14 +357,14 @@ export function I18nProvider({ children }: { children: ReactNode }) {
       } else if (typeof navigator !== "undefined") {
         setLangState(navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en");
       }
-    } catch {}
+    } catch { }
   }, []);
 
   useEffect(() => {
     if (typeof document !== "undefined") document.documentElement.lang = lang;
     try {
       localStorage.setItem("lang", lang);
-    } catch {}
+    } catch { }
   }, [lang]);
 
   const setLang = useCallback((l: Lang) => setLangState(l), []);

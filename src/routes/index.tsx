@@ -16,9 +16,9 @@ export const Route = createFileRoute("/")({
     {
       name: "description",
       content:
-        "Portfolio acadêmico de Laís Zanardi Inocêncio — estudante de Desenvolvimento de Software na Fatec SJC e estagiária na Ericsson.",
+        "Portfolio acadêmico de Laís Zanardi Inocêncio — estudante de Desenvolvimento de Software Multiplataforma na Fatec SJC e estagiária na Ericsson.",
     },
-    { property: "og:title", content: "Laís Zanardi Inocêncio — Desenvolvimento de Software" },
+    { property: "og:title", content: "Laís Zanardi Inocêncio — Desenvolvimento de Software Multiplataforma" },
     {
       property: "og:description",
       content: "Projetos acadêmicos, pesquisa e habilidades técnicas.",

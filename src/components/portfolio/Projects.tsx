@@ -8,16 +8,26 @@ import { useI18n } from "@/lib/i18n";
 
 export function Projects() {
   const { t } = useI18n();
-  const projects = [
-    {
-      key: "p1",
-      img: p1,
-      name: "Portfólio Dinâmico",
-      tag: "Web App",
-      tech: ["Node.js", "Sequelize", "EJS", "JavaScript", "CSS"],
-      repo: "github.com/laiszanardi/portfolio-dinamico",
-    },
-  ];
+  
+    const projects = [
+  {
+    key: "p1",
+    img: p1,
+    name: "Portfólio Dinâmico",
+    tag: "Web App",
+    tech: ["Node.js", "Sequelize", "EJS", "JavaScript", "CSS"],
+    repo: "github.com/laiszanardi/portfolio-dinamico",
+  },
+  {
+    key: "p2",
+    img: p2,
+    name: "Controle de Apontamento de Horas",
+    tag: "Microsserviços",
+    tech: ["Java", "Spring Boot", "Docker", "RabbitMQ", "React", "TypeScript", "Jira"],
+    repo: "github.com/fatec-api/java-the-hutt",
+  }
+];
+
 
   return (
     <section id="projetos" className="relative border-t border-white/5 px-6 py-32">
