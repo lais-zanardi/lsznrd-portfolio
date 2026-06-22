@@ -9,11 +9,14 @@ export function Skills() {
       { name: "React", level: 90 },
       { name: "HTML5 / CSS3", level: 95 },
       { name: "EJS", level: 85 },
+      { name: "Typescript", level: 82 },
     ]},
     { labelKey: "skills.group.frameworks", items: [
       { name: "Node.js", level: 88 },
       { name: "Java + Spring Boot", level: 85 },
       { name: "Express", level: 82 },
+      { name: "RabbitMQ", level: 84 },
+      { name: "Docker", level: 79 },
     ]},
     { labelKey: "skills.group.databases", items: [
       { name: "MySQL / PostgreSQL", level: 80 },
